@@ -37,24 +37,14 @@ function removeSpaces() {
     <ul
       class="flex flex-wrap items-center justify-center list-none mt-3 text-sm"
     >
-      <li>
-        <a href="#">UI Library</a>
-      </li>
-      <li>
-        <a href="#">State management</a>
-      </li>
-      <li>
-        <a href="#">File-based Routing</a>
-      </li>
-      <li>
-        <a href="#">Vue Directives</a>
-      </li>
-      <li>
-        <a href="#">Components</a>
-      </li>
+      <li>UI Library</li>
+      <li>State management</li>
+      <li>File-based Routing</li>
+      <li>Vue Directives</li>
+      <li>Components</li>
     </ul>
 
-    <div class="relative mt-8">
+    <div class="relative flex flex-col mt-8">
       <div
         class="flex items-center justify-center gap-x-2 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg"
       >
@@ -83,6 +73,14 @@ function removeSpaces() {
         </button>
       </div>
 
+      <a
+        href="https://github.com/dev-murphy/v3lt"
+        class="flex items-center gap-x-2 mt-1 text-base text-neutral-300 text-center font-mono hover:underline mx-auto"
+      >
+        <Github class="w-5 h-5" />
+        View Source Code
+      </a>
+
       <p
         class="absolute top-full left-1/2 translate-y-1 -translate-x-1/2 font-mono text-lg text-center text-white transition-all"
         :class="{
@@ -100,7 +98,7 @@ function removeSpaces() {
 @import "tailwindcss";
 
 ul li {
-  @apply relative pl-6 font-bold text-neutral-600 hover:text-white transition-colors duration-150 uppercase;
+  @apply relative pl-6 text-neutral-600 hover:text-white tracking-wider transition-colors duration-150 uppercase;
 }
 
 ul li:not(:last-child)::before {
