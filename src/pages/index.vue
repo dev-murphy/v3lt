@@ -26,7 +26,7 @@ function removeSpaces() {
 
 <template>
   <div
-    class="min-h-screen bg-linear-to-br from-black to-neutral-800 flex flex-col items-center justify-center px-4"
+    class="min-h-screen bg-linear-to-br from-black to-neutral-800 flex flex-col items-center justify-center font-[Inter_Tight] px-4"
   >
     <h1 class="text-3xl md:text-5xl text-neutral-400 font-bold">
       Welcome to {{ appStore.name }}
