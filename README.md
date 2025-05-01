@@ -1,21 +1,35 @@
-# My Vue 3 template
+# V3LT - Vue 3 Project Template
 
-I just got tired of the constantly setting up a Vue 3, because I am just "that guy".
+I got tired of setting up Vue 3 projects from scratch every time — so I made this starter. If you're also "that person," this might save you a few minutes (or hours).
 
-## Features
+## 🚀 Getting Started
 
-There are some features/packages I have usually in every Vue 3 project that I do, which I've listed below.
+Navigate to the folder where you want to create your project, then run:
 
-> [!NOTE]
-> In this project, I am using Vite Vue template, PNPM package manager and Typscript as my defaults. You can always change the package manager easily
+```bash
+npx degit dev-murphy/v3lt <my-project>
+```
 
-- [TailwindCSS](https://tailwindcss.com/docs/installation/using-vite) - for UI framework
-- [Pinia](https://pinia.vuejs.org/getting-started.html) - for state management
-- [Vue Router](https://router.vuejs.org/installation.html) with [unplugin vue router](https://github.com/posva/unplugin-vue-router?tab=readme-ov-file#install) - for file-based routing for single page web apps
-- [Unplugin Auto Import](https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#install) - for auto-importing vue directives
-- [Unplugin Vue Components](https://github.com/unplugin/unplugin-vue-components?tab=readme-ov-file#installation) - for auto-importing vue components
-- [VueUse](https://vueuse.org/guide/) `Maybe` - for additional features
+Replace `<my-project>` with your desired project name.
 
-## Shout out
+Once it's cloned, feel free to customize and build from there. Make it your own — and go beyond!
 
-A big shoutout goes to [@Antfu](https://github.com/antfu), as this template is heavily inspired by this own, [Vitesse](https://github.com/antfu-collective/vitesse). So yea, I love the work you've done :heart:.
+## ⚙️ What's Included
+
+This template includes tools and packages I almost always use in Vue 3 projects:
+
+> 💡 **Note:**  
+> This project uses the **Vite Vue template**, **PNPM** as the package manager, and **TypeScript** by default. You can easily switch to your preferred package manager if needed.
+
+### Core Tools & Features
+
+- 🌿 [Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite) – Utility-first CSS framework
+- 🧠 [Pinia](https://pinia.vuejs.org/getting-started.html) – State management
+- 🧭 [Vue Router](https://router.vuejs.org/) + [unplugin-vue-router](https://github.com/posva/unplugin-vue-router) – File-based routing
+- 🪄 [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import) – Auto-import common APIs (like Vue composition utilities)
+- 🧩 [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) – Auto-import Vue components
+- 🧰 [VueUse](https://vueuse.org/) (optional) – Collection of essential Vue Composition API utilities
+
+## 🙌 Acknowledgements
+
+Big thanks to [@antfu](https://github.com/antfu) — this template draws heavy inspiration from his amazing [Vitesse](https://github.com/antfu-collective/vitesse) starter. Keep up the great work ❤️
