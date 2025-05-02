@@ -26,30 +26,46 @@ function removeSpaces() {
 
 <template>
   <div
-    class="min-h-screen bg-linear-to-br from-black to-neutral-800 flex flex-col items-center justify-center font-[Inter_Tight] px-4"
+    class="w-creen min-h-dvh bg-linear-to-br from-black to-neutral-800 flex flex-col items-center justify-center font-[Inter_Tight] px-4"
   >
-    <h1 class="text-3xl md:text-5xl text-neutral-400 font-bold">
+    <h1 class="text-center text-3xl md:text-5xl text-neutral-400 font-bold">
       Welcome to {{ appStore.name }}
     </h1>
+    
     <p class="mt-1 text-white text-center text-xl">
       This is another opinionated Vue 3 project with Typescript
     </p>
+
     <ul
-      class="flex flex-wrap items-center justify-center list-none mt-3 text-sm"
+      class="w-full flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 list-none mt-6 text-sm tracking-wider duration-150 uppercase"
     >
-      <li>UI Library</li>
-      <li>State management</li>
-      <li>File-based Routing</li>
-      <li>Vue Directives</li>
-      <li>Components</li>
+      <li class="text-neutral-600 hover:text-white transition-colors">
+        UI Library
+      </li>
+      <li class="w-1.5 h-1.5 bg-emerald-500 rounded"></li>
+      <li class="text-neutral-600 hover:text-white transition-colors">
+        State management
+      </li>
+      <li class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></li>
+      <li class="text-neutral-600 hover:text-white transition-colors">
+        File-based Routing
+      </li>
+      <li class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></li>
+      <li class="text-neutral-600 hover:text-white transition-colors">
+        Vue Directives
+      </li>
+      <li class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></li>
+      <li class="text-neutral-600 hover:text-white transition-colors">
+        Components
+      </li>
     </ul>
 
     <div class="relative flex flex-col mt-8">
       <div
-        class="flex items-center justify-center gap-x-2 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg"
+        class="flex items-center justify-center gap-x-0 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg"
       >
         <div class="flex text-sm">
-          <p>npx degit dev-murphy/v3lt</p>
+          <p class="flex-shrink-0">npx degit dev-murphy/v3lt</p>
           <input
             type="text"
             v-model="projectName"
@@ -93,15 +109,3 @@ function removeSpaces() {
     </div>
   </div>
 </template>
-
-<style scoped>
-@import "tailwindcss";
-
-ul li {
-  @apply relative pl-6 text-neutral-600 hover:text-white tracking-wider transition-colors duration-150 uppercase;
-}
-
-ul li:not(:last-child)::before {
-  @apply absolute content-[''] top-1/2 -right-4 -translate-y-1/2 w-1.5 h-1.5 bg-emerald-500 rounded-full;
-}
-</style>
