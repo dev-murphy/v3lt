@@ -12,6 +12,22 @@ npx degit dev-murphy/v3lt <my-project>
 
 Replace `<my-project>` with your desired project name.
 
+Remove the `.git` folder ...
+
+```bash
+rm -fr .git
+```
+
+And re-initialize the git repo. _(Optional)_
+
+```bash
+git init
+git add .
+git commit -m "feat: initial commit"
+git branch -M main
+git push -u origin main
+```
+
 Once it's cloned, feel free to customize and build from there. Make it your own — and go beyond!
 
 ## ⚙️ What's Included
