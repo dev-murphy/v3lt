@@ -31,7 +31,7 @@ function removeSpaces() {
     <h1 class="text-center text-3xl md:text-5xl text-neutral-400 font-bold">
       Welcome to {{ appStore.name }}
     </h1>
-    
+
     <p class="mt-1 text-white text-center text-xl">
       This is another opinionated Vue 3 project with Typescript
     </p>
@@ -60,12 +60,23 @@ function removeSpaces() {
       </li>
     </ul>
 
-    <div class="relative flex flex-col mt-8">
+    <div
+      class="w-full md:w-4/5 flex items-start gap-2 bg-yellow-900/50 mt-3 p-2 border border-yellow-600 text-yellow-400 tracking-wide rounded-lg"
+    >
+      <Alert class="w-5 h-5 flex-shrink-0 mt-1" />
+      <p>
+        You can input the name of the project below.
+        <b class="underline">Please Note:</b>
+        For more information, please check out the source code on Github.
+      </p>
+    </div>
+
+    <div class="w-full relative flex flex-col mt-8">
       <div
-        class="flex items-center justify-center gap-x-0 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg"
+        class="flex items-center justify-between gap-x-0 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg"
       >
         <div class="flex text-sm">
-          <p class="flex-shrink-0">npx degit dev-murphy/v3lt</p>
+          <p class="hidden sm:block flex-shrink-0">npx degit dev-murphy/v3lt</p>
           <input
             type="text"
             v-model="projectName"
@@ -91,7 +102,7 @@ function removeSpaces() {
 
       <a
         href="https://github.com/dev-murphy/v3lt"
-        class="flex items-center gap-x-2 mt-1 text-base text-neutral-300 text-center font-mono hover:underline mx-auto"
+        class="flex items-center gap-x-2 mt-2 text-base text-neutral-300 text-center font-mono hover:underline mx-auto"
       >
         <Github class="w-5 h-5" />
         View Source Code

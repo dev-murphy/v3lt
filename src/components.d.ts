@@ -8,6 +8,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Alert: typeof import('./components/Alert.vue')['default']
     Copy: typeof import('./components/Copy.vue')['default']
     Github: typeof import('./components/Github.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
