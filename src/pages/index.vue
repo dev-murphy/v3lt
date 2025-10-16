@@ -32,7 +32,7 @@ function removeSpaces() {
       Welcome to {{ appStore.name }}
     </h1>
 
-    <p class="mt-1 text-white text-center text-xl">
+    <p class="wmt-1 text-white text-center text-xl">
       This is another opinionated Vue 3 project with Typescript
     </p>
 
@@ -61,9 +61,9 @@ function removeSpaces() {
     </ul>
 
     <div
-      class="w-full md:w-4/5 flex items-start gap-2 bg-yellow-900/50 mt-3 p-2 border border-yellow-600 text-yellow-400 tracking-wide rounded-lg"
+      class="w-full max-w-[700px] flex items-start gap-2 bg-yellow-900/50 mt-3 px-5 py-2 border border-yellow-600 text-yellow-400 tracking-wide rounded-lg"
     >
-      <Alert class="w-5 h-5 flex-shrink-0 mt-1" />
+      <Alert class="w-5 h-5 flex-shrink-0 mt-0.5" />
       <p>
         You can input the name of the project below.
         <b class="underline">Please Note:</b>
@@ -71,19 +71,22 @@ function removeSpaces() {
       </p>
     </div>
 
-    <div class="w-full relative flex flex-col mt-8">
+    <div class="relative w-full max-w-[700px] flex flex-col mt-5">
       <div
-        class="flex items-center justify-between gap-x-0 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg"
+        class="flex items-center justify-between gap-x-0 md:gap-x-6 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 p-2.5 pb-3 font-mono text-neutral-300 rounded-lg overflow-hidden"
       >
         <div class="flex text-sm">
-          <p class="hidden sm:block flex-shrink-0">npx degit dev-murphy/v3lt</p>
+          <p class="hidden sm:inline flex-shrink-0">
+            npx degit dev-murphy/v3lt
+          </p>
+          <p class="inline sm:hidden flex-shrink-0">.../v3lt</p>
           <input
             type="text"
             v-model="projectName"
             @keydown.space.prevent
             @input="removeSpaces"
             placeholder="my-project"
-            class="pl-2 outline-none"
+            class="w-full pl-2 pr-6 outline-none"
           />
         </div>
 
@@ -93,6 +96,7 @@ function removeSpaces() {
               `npx degit dev-murphy/v3lt ${projectName || 'my-project'}`
             )
           "
+          class="absolute top-3 right-2"
         >
           <Copy
             class="w-5 h-5 text-neutral-600 hover:text-white cursor-pointer"
